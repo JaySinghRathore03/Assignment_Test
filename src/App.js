@@ -19,7 +19,7 @@ function App() {
         hasError = true;
       }
 
-      const responseData = await response.json();
+      const responseData = await response.json(); // storing the response data from the response received.
       
       // console.log("Response Data =>",responseData)
       // console.log("Response Data Email =>",responseData.results[0].email)
