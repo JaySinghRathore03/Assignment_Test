@@ -20,10 +20,11 @@ function App() {
       }
 
       const responseData = await response.json();
-      console.log("Response Data =>",responseData)
-      console.log("Response Data Email =>",responseData.results[0].email)
-      console.log("Response Data NameArray =>",responseData.results[0].name)
-      console.log("Response Data Name =>",responseData.results[0].name.title+" "+responseData.results[0].name.first+" "+responseData.results[0].name.last)
+      
+      // console.log("Response Data =>",responseData)
+      // console.log("Response Data Email =>",responseData.results[0].email)
+      // console.log("Response Data NameArray =>",responseData.results[0].name)
+      // console.log("Response Data Name =>",responseData.results[0].name.title+" "+responseData.results[0].name.first+" "+responseData.results[0].name.last)
 
       const newContact = {
           title: responseData.results[0].name.title+" "+responseData.results[0].name.first+" "+responseData.results[0].name.last,
