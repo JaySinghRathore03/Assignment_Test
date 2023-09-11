@@ -13,7 +13,7 @@ const Cart = (props) => {
 
     const cartItemAddHandler =(item) => {
         cartCtx.addItem({...item, amount:1});
-    }; //--> check
+    }; //--> check the file
 
     const cartItemRemoveHandler =(id) => {
         cartCtx.removeItem(id);
