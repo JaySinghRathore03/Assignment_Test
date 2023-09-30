@@ -34,22 +34,30 @@ function App() {
       if (hasError) {
         throw new Error(responseData.message);
       }
+      // setLoadedContacts(prevContacts => {
+      //   return prevContacts.concat({
+      //      ...newContact
+      //   });
+      // });
       setLoadedContacts(prevContacts => {
-        return prevContacts.concat({
-          ...newContact
-        });
+        return [newContact,...prevContacts]
       });
+      // setLoadedContacts([newContact]) // If we need to view just one contact at a time.
       setIsLoading(false);
     } catch (error) {
       alert(error.message || 'Something went wrong!');
     }
   };
 
+  const clearTable = () => {
+    setLoadedContacts([])
+  }
+
   return (
     <React.Fragment>
       <Header />
       <main>
-        <NewContact onAddProduct={addProductHandler} />
+        <NewContact onAddProduct={addProductHandler} onClearTable={clearTable}/>
         {isLoading && <p className="loader">Loading...</p>}
         {!isLoading && <ContactList contactInfo={loadedContacts} />}
       </main>

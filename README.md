@@ -11,13 +11,10 @@ Checkout to the dev branch using below command:
 ## `git checkout dev`
 
 ### Step 3:
-Navigate to the frontend folder
-
-### Step 4:
 In the project directory, you can run below command to install node modules:
 ## `npm install`
 
-### Step 5:
+### Step 4:
 In the project directory, you can run below command to run the project
 ### `yarn start`
 

@@ -1,3 +1,16 @@
+/* @media screen and (max-width: 375px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+} */
 * {
   box-sizing: border-box;
 }
